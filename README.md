@@ -23,3 +23,4 @@ Things you may want to cover:
 
 * ...
 # find_coffee_shop_api
+# search_cafe_api
