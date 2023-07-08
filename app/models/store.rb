@@ -6,8 +6,7 @@ class Store < ApplicationRecord
 
   scope :within, -> (longitude, latitude, distance_in_km = 5) {
     where(%{ 
-      ST_Distance(lonlat, 'POINT(%f %f)') < %d )
-    }
-      % [longitude, latitude, distance_in_km * 1000])
+      ST_Distance(lonlat, 'POINT(%f %f)') < %d
+    } % [longitude, latitude, distance_in_km * 1000])
   }
 end
