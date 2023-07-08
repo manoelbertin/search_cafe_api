@@ -9,6 +9,6 @@ class CreateStores < ActiveRecord::Migration[7.0]
       t.timestamps
     end
 
-    add_index :stores, :lonlat
+    add_index :stores, :lonlat, using: :gist
   end
 end
