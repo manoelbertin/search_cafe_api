@@ -4,6 +4,7 @@ class CreateStores < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :address
       t.string :google_place_id
+      t.st_point :lonlat, geographic: true
 
       t.timestamps
     end
