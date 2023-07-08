@@ -4,8 +4,10 @@ one:
   name: MyString
   address: MyString
   google_place_id: MyString
+  lonlat: 
 
 two:
   name: MyString
   address: MyString
   google_place_id: MyString
+  lonlat: 
