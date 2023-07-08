@@ -54,6 +54,9 @@ GEM
     activerecord (7.0.6)
       activemodel (= 7.0.6)
       activesupport (= 7.0.6)
+    activerecord-postgis-adapter (8.0.2)
+      activerecord (~> 7.0.0)
+      rgeo-activerecord (~> 7.0.0)
     activestorage (7.0.6)
       actionpack (= 7.0.6)
       activejob (= 7.0.6)
@@ -146,6 +149,10 @@ GEM
     rake (13.0.6)
     reline (0.3.6)
       io-console (~> 0.5)
+    rgeo (3.0.0)
+    rgeo-activerecord (7.0.1)
+      activerecord (>= 5.0)
+      rgeo (>= 1.0.0)
     thor (1.2.2)
     timeout (0.4.0)
     tzinfo (2.0.6)
@@ -159,6 +166,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  activerecord-postgis-adapter
   bootsnap
   debug
   pg (~> 1.1)
