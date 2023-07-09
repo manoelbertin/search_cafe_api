@@ -11,6 +11,6 @@ class Store < ApplicationRecord
   }
 
   def ratings_average
-    
+    return 0 if self.ratings.empty?
   end
 end
