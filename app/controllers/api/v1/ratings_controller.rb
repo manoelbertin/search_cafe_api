@@ -13,4 +13,7 @@ class Api::V1::RatingsController < ApplicationController
 
   def create_store
   end
+
+  def ratings_params
+  end
 end
