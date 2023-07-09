@@ -2,10 +2,9 @@ class Api::V1::RatingsController < ApplicationController
 
   def create
     ActiveRecord::Base.transaction do
-      
+      create_store
+      create_rating
     end
-    create_store
-    create_rating
   end
 
   private
