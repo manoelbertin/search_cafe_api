@@ -1,4 +1,7 @@
 class Api::V1::StoresController < ApplicationController
+  before_action :set_store, only: [:show]
+
+  def show end;
 
   private
 
