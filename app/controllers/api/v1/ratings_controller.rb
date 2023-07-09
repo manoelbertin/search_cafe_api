@@ -9,9 +9,12 @@ class Api::V1::RatingsController < ApplicationController
 
   def create_rating
     @rating = Rating.new(ratings_params)
+
+    @rating.store_id = 
   end
 
   def create_store
+    @store = Store.find_or_create_by
   end
 
   def ratings_params
