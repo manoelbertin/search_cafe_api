@@ -4,6 +4,7 @@ class Api::V1::StoresController < ApplicationController
   def index
     @stores = Store.within(params[:longitude].to_f, params[:latitude].to_f)
     .sort_by { |store| store.ratings_average }
+    .reverse
   end
   
   def show 
