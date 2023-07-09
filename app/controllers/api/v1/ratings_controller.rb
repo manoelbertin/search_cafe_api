@@ -1,6 +1,9 @@
 class Api::V1::RatingsController < ApplicationController
 
   def create
+    ActiveRecord::Base.transaction do
+      
+    end
     create_store
     create_rating
   end
