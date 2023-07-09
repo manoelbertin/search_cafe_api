@@ -10,7 +10,7 @@ class Api::V1::RatingsController < ApplicationController
   def create_rating
     @rating = Rating.new(ratings_params)
 
-    @rating.store_id = 
+    @rating.store_id = @store.id
   end
 
   def create_store
