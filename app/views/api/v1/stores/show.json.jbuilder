@@ -10,3 +10,6 @@ json.ratings @store.ratings do |rating|
   json.user_name rating.user_name
   json.date rating.created_at.strtime("%d/%m/%Y")
 end
+
+json.ratings_count @store.ratings.count
+json.ratings_average @store.ratings_average
