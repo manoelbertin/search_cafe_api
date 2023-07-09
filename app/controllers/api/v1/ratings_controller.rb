@@ -8,7 +8,7 @@ class Api::V1::RatingsController < ApplicationController
   private
 
   def create_rating
-    @rating = Rating.new()
+    @rating = Rating.new(ratings_params)
   end
 
   def create_store
