@@ -15,5 +15,6 @@ class Api::V1::RatingsController < ApplicationController
   end
 
   def ratings_params
+    params.require(:rating).permit(:value, :opinio, :user_name)
   end
 end
